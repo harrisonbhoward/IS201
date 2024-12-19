@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is Paper Quilling?</title>
+    <style>
+    body {
+            background-image: url(https://th.bing.com/th/id/OIP.Xc2whc2ShVdsdWCaKMo5kAHaE8?w=216&h=180&c=7&r=0&o=5&pid=1.7);
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed;
+        }
+    </style>
+    <link href="pro.css" rel="stylesheet" />
+</head>
+        
+    
+<body>
+    <a href="../startbootstrap-clean-blog-gh-pages/index.html">Home</a> |    <a href="../startbootstrap-clean-blog-gh-pages/education.html">Education</a> |    <a href="../startbootstrap-clean-blog-gh-pages/experience.html">Experience</a> |    <a href="../startbootstrap-clean-blog-gh-pages/skills.html">Skills</a> |    <a href="../startbootstrap-clean-blog-gh-pages/contact.html">Contact</a> |    <a href="../startbootstrap-clean-blog-gh-pages/Custompage.html">Custom Page</a>  
+    <h1>What is Paper Quilling?</h1>
+    <h5>Paper quilling is a delicate art form that transforms simple strips of paper into intricate, flowing designs. The beauty lies in the way these paper shapes interlace, creating visually stunning patterns that seem to come alive. With its soft curves and vibrant colors, quilling brings a sense of elegance and creativity to even the smallest details.</h5>
+    
+    <p> Here are a few of the skills required to make your paper quilling become absolutely magical:</p>
+    
+    <ol>
+        <li> Fine Motor Skills
+            <ul>    
+                <li>How well can you really twiddle your thumbs?</li>
+                <li>Watch out for your pinkies, they might get pinched!</li>
+            </ul>
+        </li>
+        <li> Depth Perception
+            <ul>
+                <li>Keep your eye on the ball</li>
+                <li>Paper requires a lot of attention, and messing up your depths could make your project look terrible!</li>
+            </ul>
+        </li>
+    </ol>
+    <p>Here is a beautiful example of what a professional quilling project looks like.</p>
+    <img height=150 src="assets/img/Paperquiller.jpg">
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <br>
+    <br>
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jSI0Wsv7_yQ?si=XMzECBBDmSh-xd8N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+    
+    
+    <!--Tab Code-->
+    <div class='tableauPlaceholder' id='viz1734587951087' style='position: relative'><noscript><a href='#'><img alt='Sheet 7 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ha&#47;HarrisonHowardgettingstarted&#47;Sheet7&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='HarrisonHowardgettingstarted&#47;Sheet7' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ha&#47;HarrisonHowardgettingstarted&#47;Sheet7&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1734587951087');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    
+    
+    <div class="container">
+        <h1>Color Name Generator</h1>
+        <button onclick="generateColor()">Generate Color</button>
+
+        <div class="color-box" id="color-box"></div>
+        <div class="color-name" id="color-name">Color Name</div>
+    </div>
+
+    <script>
+        const colors = [
+            "Red", "Green", "Blue", "Yellow", "Orange", "Purple", "Pink", "Brown", "Gray", "Black", 
+            "White", "Cyan", "Magenta", "Lime", "Indigo", "Violet", "Turquoise", "Lavender", "Peach", 
+            "Beige", "Maroon", "Olive", "Teal", "Navy", "Coral", "Crimson", "Slate", "Mint"
+        ];
+
+        function generateColor() {
+            // Generate a random index to pick a color name
+            const randomIndex = Math.floor(Math.random() * colors.length);
+            const colorName = colors[randomIndex];
+
+            // Get a random hex color
+            const randomHexColor = getRandomColor();
+
+            // Display the color name and color in the box
+            document.getElementById('color-name').textContent = colorName;
+            document.getElementById('color-box').style.backgroundColor = randomHexColor;
+            document.body.style.backgroundColor = randomHexColor; // Optional: change the background color
+        }
+
+        function getRandomColor() {
+            // Function to generate a random hex color
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+    </script>
+    
+    <a href="#top">Back To Top</a>
+    
+    
+</body>
+</html>

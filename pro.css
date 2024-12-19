@@ -1,0 +1,30 @@
+h1 {
+    font-size: 2.5em; /* Larger font for heading */
+    margin-bottom: 20px;
+    font-weight: 400; /* Lighter, more elegant text */
+    letter-spacing: 1px; /* Slight spacing for clarity */
+}
+
+p {
+    font-size: 1.2em; 
+    line-height: 1.6; 
+    font-weight: 300; 
+}
+
+h1, p {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+/
+footer {
+    font-size: 0.9em;
+    margin-top: 30px;
+    color: #ddd; 
+}
+li{
+    text-decoration-color: whitesmoke
+     font-size: 1.2em; 
+    line-height: 1.6; 
+    font-weight: 300;
+    
+    
+}
